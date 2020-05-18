@@ -87,6 +87,16 @@ a {
     font-size: .8rem;
     font-weight: 600;
 }
+.header__list-item {
+    padding-left: 1.2rem;
+}
+.header__list-item:before {
+    content: attr(data-icon);
+    display: block;
+    position: absolute;
+    left: 2rem;
+    font-size: .65rem;
+}
 
 /* --- INFO --- */
 .info {
