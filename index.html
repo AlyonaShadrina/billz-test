@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="components.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <svg style="display: none;">
+        <defs>
+            <g id="stat">
+                <path d="M0 0h24v24H0V0z" fill="none"/>
+                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 10h2v7H7zm4-3h2v10h-2zm4 6h2v4h-2z"/>
+            </g>
+            <g id="help">
+                <path d="M0 0h24v24H0z" fill="none"/><path d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z"/>
+            </g>
+        </defs>
+      </svg>
+    <div class="card card--shadow container">
+        <div class="label">Уникальное предложение</div>
+        <div class="header padding-x">
+            <div class="header__icon">
+                <svg viewBox="0 0 24 24" fill="black" width="48px" height="48px" >          
+                    <use xlink:href="#stat" />
+                </svg>
+            </div>
+            <h1 class="header__title">Максимум дохода</h1>
+            <ul class="header__list">
+                <li class="header__list-item">Гарантированная доходность 12%</li>
+                <li class="header__list-item">Защита вложений 100%</li>
+            </ul>
+        </div>
+        <div class="info">
+            <div class="info__image"></div>
+            <div class="info__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque <strong>soluta</strong>  iusto assumenda necessitatibus numquam amet optio cumque modi voluptatum et nesciunt deserunt, temporibus ea nulla. Suscipit aperiam laborum <a href="#" class="link--arrow"><strong>autem neque.</strong></a> </div>
+        </div>
+        
+        <div class="settings padding-x">
+            <div class="settings__item">
+                <div class="label-text">Инвестирование</div>
+                <div class="settings__value">10000 Р</div>
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            </div>
+            <div class="settings__item">
+                <div class="label-text">Срок</div>
+                <select class="select">
+                    <option value="1">1 месяц</option>
+                    <option value="2">2 месяца</option>
+                    <option value="3">3 месяца</option>
+                </select>
+            </div>
+            <div class="settings__item">
+                <div class="switch-container">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span></span>
+                        text
+                    </label>
+                    <div>
+                        <strong>Включён</strong> налоговый вычет (ИИС)
+                    </div>
+                </div>
+            </div>
+            <div class="settings__item">
+                <div class="profit">
+                    <div class="profit__label label-text">
+                        Доходность, до
+                        <div class="tooltip">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--color-seconadry-text)" width="18px" height="18px">
+                                <use xlink:href="#help" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="profit__value">19%</div>
+                </div>
+            </div>
+            <div class="settings__item">
+                <div class="profit">
+                    <div class="profit__label label-text">
+                        Доходность, до
+                        <div class="tooltip">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--color-seconadry-text)" width="18px" height="18px">
+                                <use xlink:href="#help" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="profit__value">19%</div>
+                </div>
+            </div>
+            <div class="settings__item">
+                <div class="profit">
+                    <div class="profit__label label-text">
+                        Доходность, до
+                        <div class="tooltip">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--color-seconadry-text)" width="18px" height="18px">
+                                <use xlink:href="#help" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="profit__value">19%</div>
+                </div>
+            </div>
+        </div>
+        <div class="padding-x">
+            <div class="card card--error card--padding">Осталось 12 продуктов</div>
+        </div>
+        <div class="padding-x">
+            <button class="button button--full-width" disabled>Инвестировать 10000 р с ИИС</button>
+        </div>
+        <div class="tabs">
+            <div class="tabs__switcher">
+                <div class="tabs__item tabs__item--selected">Инвестидея</div>
+                <div class="tabs__item">Вопросы</div>
+                <div class="tabs__item">Детали</div>
+                <div class="tabs__item">Новости</div>
+                <div class="tabs__item">Мнение экспертов</div>
+            </div>
+            <div class="tabs__content padding-x">content</div>
+        </div>
+    </div>
+</body>
+</html>
